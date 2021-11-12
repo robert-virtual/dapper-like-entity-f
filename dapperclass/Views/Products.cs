@@ -36,7 +36,7 @@ namespace dapperclass.Views
             Cats = Cat.GetAll();
             cb_cat.DataSource = Cats;
             cb_cat.DisplayMember = "Name";
-            cb_cat.ValueMember = "Id";
+            cb_cat.ValueMember = "CategoryId";
         }
 
         private void btn_save_prod_Click(object sender, EventArgs e)

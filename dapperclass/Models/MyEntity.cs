@@ -17,6 +17,7 @@ namespace dapperclass.Models
                 return db.GetAll<T>().ToList();
             }
         }
+        
         public static long Save(T entity)
         {
             using (var db = ConnectDB())

@@ -9,12 +9,15 @@ namespace dapperclass.Models
     public class Category:MyEntity<Category>
     {
         [Key]
-        public int Id { get; set; }
+        public int CategoryId { get; set; }
         public string Name  { get; set; }
 
         [Write(false)]
         public List<Product> Products { get; set; }
-        
-        
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
